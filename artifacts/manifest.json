@@ -1,0 +1,11 @@
+﻿{
+    "files":  [
+                  "databases.md",
+                  "dsa.md",
+                  "original_artifact.md",
+                  "original_artifacts/GameExperience.py",
+                  "original_artifacts/TreasureHuntGame_original.ipynb",
+                  "original_artifacts/TreasureMaze.py",
+                  "software-engineering.md"
+              ]
+}
