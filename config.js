@@ -1,14 +1,14 @@
 window.PORTFOLIO_CONFIG = {
   pageTitle: "CS Capstone ePortfolio",
   metaDescription:
-    "CS Capstone ePortfolio with Software Engineering, DSA, and Databases narratives, artifacts, and images.",
+    "CS Capstone ePortfolio with Software Engineering, DSA and Databases narratives, artifacts and images.",
   heroEyebrow: "CS Capstone",
   heroTitle: "Aiden Villanueva - ePortfolio",
   heroIntro:
-    "A curated portfolio highlighting growth in software engineering, algorithms and data structures, and database design.",
+    "A curated portfolio highlighting growth in software engineering, algorithms and data structures and database design.",
   nav: {
-    featuredVideo: "Featured Video",
     selfAssessment: "Professional Self-Assessment",
+    featuredVideo: "Featured Video",
     softwareEngineering: "Software Engineering",
     dsa: "DSA",
     databases: "Databases",
@@ -43,7 +43,21 @@ window.PORTFOLIO_CONFIG = {
   },
   artifacts: {
     title: "Artifacts",
-    note: "This section is loaded from Markdown files in the artifacts folder.",
+    note: "This section is loaded from a layout file and renders each artifact as its own subsection.",
+    source: "layoutFile",
+    layout: {
+      path: "artifacts/layout.json",
+      allowedExtensions: ["pdf", "doc", "docx", "ppt", "pptx", "png", "jpg", "jpeg", "md", "txt", "py", "js", "java", "c", "cpp", "cs", "sql", "json", "yaml", "yml", "ipynb"],
+      excludedFiles: ["index.md", "readme.md", "manifest.json", "layout.json"]
+    },
+    manifestDirectory: {
+      path: "artifacts/manifest.json",
+      allowedExtensions: ["pdf", "doc", "docx", "ppt", "pptx", "png", "jpg", "jpeg", "md", "txt", "py", "js", "java", "c", "cpp", "cs", "sql", "ipynb"],
+      excludedFiles: ["index.md", "readme.md", "manifest.json", "layout.json"]
+    },
+    emptyDirectoryMessage: "No matching files were found in the local artifacts folder.",
+    directoryLoadErrorMessage:
+      "Artifacts directory could not be loaded. Verify artifacts/manifest.json exists and is valid JSON.",
     emptyMessage: "No artifact markdown files listed in artifacts/index.md yet.",
     loadErrorMessage:
       "Artifacts could not be loaded. Use a local static server when previewing this page.",

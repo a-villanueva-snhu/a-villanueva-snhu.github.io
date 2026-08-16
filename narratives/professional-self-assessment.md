@@ -4,19 +4,19 @@ One of the most valuable outcomes of the program has been learning that successf
 
 Communication with stakeholders has been another important area of professional development. Throughout the program, projects frequently required translating technical requirements into working software solutions and explaining design decisions to audiences with different levels of technical knowledge. This process helped me develop a stronger understanding of the relationship between technical requirements and user or organizational needs. A technically sophisticated solution does not provide value if it does not solve the intended problem or if its purpose and operation cannot be effectively communicated to stakeholders. As a result, I have learned to place greater emphasis on requirements analysis, documentation and explaining technical decisions in clear and accessible language.
 
-# Algorithms and Data Structures
+## Algorithms and Data Structures
 
 The program also significantly strengthened my understanding of algorithms and data structures. Earlier programming experience gave me familiarity with implementing algorithms, but coursework helped develop a more analytical approach to evaluating computational problems. I became more aware of the importance of selecting appropriate algorithms and data structures based on efficiency, scalability and the characteristics of the available data. Rather than treating an algorithm as simply a piece of code that produces the correct output, I now consider the tradeoffs involved in its computational complexity, memory requirements and suitability for the specific problem being solved.
 
 This analytical perspective became increasingly important as I developed projects involving machine learning and large datasets. My work with Python, scientific libraries, structured data and machine learning models required consideration of how data was represented, transformed or processed before it could be used effectively by an algorithm. These experiences contributed to my interest in artificial intelligence and data-driven computing and helped shape my professional goal of continuing to develop expertise in machine learning and computational analysis.
 
-# Software Design and Engineering
+## Software Design and Engineering
 
 Software engineering has been another major area of growth. Throughout the program, I have worked with multiple programming languages and development environments, including Python, Java, C#, SQL and web technologies. This experience has helped me recognize the importance of software architecture and maintainability. I have developed a stronger preference for modular systems in which individual components have clearly defined responsibilities and can be independently tested, improved, or replaced.
 
 My development experience outside of the artifacts included in this portfolio has also contributed to this growth. Personal programming and game development projects have provided opportunities to design larger systems, manage project scope, implement reusable components and address the practical problems that emerge when a project grows beyond a simple classroom assignment. Working independently on these projects has required me to make architectural decisions, research unfamiliar technologies, debug complex problems and balance ideal solutions against the limitations of time and available resources. These experiences have reinforced the importance of maintainable code and realistic project planning.
 
-# Databases
+## Databases
 
 Database development has also expanded my understanding of how software applications manage persistent information. Coursework and project development provided experience working with SQL and relational database concepts, including data organization, querying, relationships and persistent storage. I learned that database design is closely connected to the overall architecture and performance of an application. Decisions about how information is structured affect not only storage but also the efficiency, scalability and reliability of the entire system.
 

@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "path": "software-engineering.md",
+      "title": "Software Engineering Artifact",
+      "type": "md",
+      "embed": true
+    },
+    {
+      "path": "dsa.md",
+      "title": "DSA Artifact",
+      "type": "md",
+      "embed": true
+    },
+    {
+      "path": "databases.md",
+      "title": "Databases Artifact",
+      "type": "md",
+      "embed": true
+    },
+    {
+      "path": "original_artifacts",
+      "title": "Original Artifacts Explorer",
+      "type": "directory",
+      "embed": true
+    }
+  ]
+}
