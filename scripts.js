@@ -75,6 +75,12 @@ function applyConfig() {
   setText("hero-title", config.heroTitle);
   setText("hero-intro", config.heroIntro);
 
+  setAttr("profile-avatar", "src", config.profile?.avatarUrl);
+  setAttr("profile-avatar", "alt", config.profile?.name);
+  setAttr("profile-link", "href", config.profile?.profileUrl);
+  setAttr("profile-link", "aria-label", config.profile?.name ? `View ${config.profile.name}'s GitHub profile` : undefined);
+  setAttr("project-link", "href", config.profile?.projectUrl);
+
   setText("nav-featured-video", config.nav?.featuredVideo);
   setText("nav-self-assessment", config.nav?.selfAssessment);
   setText("nav-software-engineering", config.nav?.softwareEngineering);
@@ -167,6 +173,7 @@ function escapeHtml(value) {
 function renderInlineMarkdown(text) {
   const codeTokens = [];
   const escapedTokens = [];
+  const imageTokens = [];
 
   // Protect code spans first so markdown formatting is not applied inside them.
   const withCodeTokens = text.replace(/`([^`]+)`/g, (_, codeValue) => {
@@ -182,7 +189,19 @@ function renderInlineMarkdown(text) {
     return token;
   });
 
-  let rendered = escapeHtml(withEscapedTokens)
+  const withImageTokens = escapeHtml(withEscapedTokens)
+    .replace(/!\[([^\]]*)\]\(([^\)]+)\)\{width=(\d+(?:\.\d+)?(?:px|%))\}/g, (_, alt, src, width) => {
+      const token = `@@IMAGETOKEN${imageTokens.length}@@`;
+      imageTokens.push(`<img class="narrative-inline-image" src="${src}" alt="${alt}" style="width: ${width};">`);
+      return token;
+    })
+    .replace(/!\[([^\]]*)\]\(([^\)]+)\)/g, (_, alt, src) => {
+      const token = `@@IMAGETOKEN${imageTokens.length}@@`;
+      imageTokens.push(`<img class="narrative-inline-image" src="${src}" alt="${alt}">`);
+      return token;
+    });
+
+  let rendered = withImageTokens
     .replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2">$1</a>')
     .replace(/(?<!\\)\*\*([^*]+)(?<!\\)\*\*/g, "<strong>$1</strong>")
     .replace(/(?<!\\)__([^_]+)(?<!\\)__/g, "<strong>$1</strong>")
@@ -191,6 +210,10 @@ function renderInlineMarkdown(text) {
 
   escapedTokens.forEach((value, index) => {
     rendered = rendered.replace(`@@ESCTOKEN${index}@@`, value);
+  });
+
+  imageTokens.forEach((value, index) => {
+    rendered = rendered.replace(`@@IMAGETOKEN${index}@@`, value);
   });
 
   codeTokens.forEach((value, index) => {
