@@ -6,6 +6,12 @@ window.PORTFOLIO_CONFIG = {
   heroTitle: "Aiden Villanueva - ePortfolio",
   heroIntro:
     "A curated portfolio highlighting growth in software engineering, algorithms and data structures and database design.",
+  profile: {
+    name: "Aiden Villanueva",
+    avatarUrl: "images/avatar.png",
+    profileUrl: "https://github.com/a-villanueva-snhu/CS-499-Capstone-Project",
+    projectUrl: "https://github.com/a-villanueva-snhu/CS-499-Capstone-Project"
+  },
   nav: {
     selfAssessment: "Professional Self-Assessment",
     featuredVideo: "Featured Video",

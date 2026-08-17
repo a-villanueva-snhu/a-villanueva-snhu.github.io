@@ -1,8 +1,7 @@
 ## Brief
 
-This artifact demonstrates the software engineering enhancement of GaiaML from a notebook prototype into a modular command-line application. The project was restructured into clear modules for configuration, logging, testing, CLI control flow, and data workflow operations. The enhancement emphasizes maintainability, readability, and extensibility while preserving the core machine learning goal.
+This artifact demonstrates the software engineering enhancement of GaiaML from a notebook prototype into a modular command-line application. The project was restructured into clear modules for configuration, logging, testing, CLI control flow and data workflow operations. The enhancement emphasizes maintainability, readability and extensibility while preserving the core machine learning goal.
 
-- Artifact file: [Software Engineering PDF](software-engineering-artifact.pdf)
 - Repository: [Project Source](https://github.com/a-villanueva-snhu/CS-499-Capstone-Project)
 
 ### Reflection
@@ -15,5 +14,5 @@ This artifact demonstrates the software engineering enhancement of GaiaML from a
 ### Course Outcomes
 
 - Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science.
-- Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.
-- Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.
+- Design, develop and deliver professional-quality oral, written and visual communications that are coherent, technically sound and appropriately adapted to specific audiences and contexts.
+- Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws and ensure privacy and enhanced security of data and resources.

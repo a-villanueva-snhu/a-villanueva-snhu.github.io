@@ -22,6 +22,8 @@ Database development has also expanded my understanding of how software applicat
 
 Security coursework provided another important perspective on software development. Studying security principles emphasized that security cannot be treated as an afterthought once an application has already been completed. Developers must consider potential vulnerabilities, data exposure, authentication, access control and secure design throughout the development process. This coursework strengthened my understanding of the responsibility software developers have when creating systems that process, store, or communicate information. It also reinforced the importance of evaluating the potential consequences of design decisions rather than focusing exclusively on functionality.
 
+## Professional Growth
+
 Developing my ePortfolio has allowed me to bring these areas of knowledge together and evaluate how they contribute to my professional identity. Reviewing and enhancing previous coursework demonstrated how my approach to software development has changed throughout the program. Earlier projects were often focused primarily on meeting functional requirements, while my more recent work places greater emphasis on architecture, maintainability, data management, algorithmic performance, testing and documentation.
 
 The artifacts included in this portfolio demonstrate this progression through three connected areas of computer science: software design and engineering, algorithms and data structures and databases. Although each artifact emphasizes a different course outcome, they are connected through the development of GaiaML, a modular machine learning application designed to analyze astronomical data and identify potential exoplanet host systems.
@@ -33,6 +35,8 @@ The algorithms and data structures artifact demonstrates my ability to apply com
 The database artifact demonstrates my ability to design a system for managing the information required by the larger application. GaiaML processes data from multiple stages of an analytical pipeline, including downloaded astronomical data, preprocessed information, model metadata and predictions. The database enhancement demonstrates how structured data management supports the rest of the application by providing persistent storage and allowing information to be retrieved and reused throughout the machine learning workflow.
 
 Together, these artifacts demonstrate a range of technical abilities rather than three isolated programming tasks. The software engineering enhancement establishes the structure of the application, the algorithms and data structures enhancement provides the analytical capability and the database enhancement supports the persistent management of information throughout the system. Collectively, they demonstrate my ability to approach a computing problem from multiple perspectives and integrate those perspectives into a complete solution.
+
+## Future Goals
 
 Completing the Computer Science program has prepared me to enter the field with a stronger technical foundation and a clearer understanding of my professional goals. I have developed experience with programming, software architecture, algorithms, databases, security, machine learning and collaborative development. More importantly, I have developed a problem-solving approach that emphasizes continuous learning, evaluation and improvement.
 
